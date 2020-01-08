@@ -55,7 +55,6 @@ class Solution:
         return int(num)
 
 
-
 if __name__ == '__main__':
     x = -123
     s = Solution()
