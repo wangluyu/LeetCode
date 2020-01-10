@@ -42,14 +42,13 @@ class Solution:
         return num
 
     def reverse1(self, x: int) -> int:
-        flag = True if x < 0 else False
-        x = abs(x)
+        flag = x > 0
+        x = x if x > 0 else -x
         num = 0
         while x > 0:
-            tmp = x % 10
-            num = (num * 10) + tmp
-            x = (x - tmp) / 10
-        num = -num if flag else num
+            num = (num * 10) + x % 10
+            x = int(x / 10)
+        num = num if flag else -num
         if num > 2147483647 or num < -2147483648:
             return 0
         return int(num)
