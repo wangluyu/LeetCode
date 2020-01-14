@@ -6,6 +6,7 @@ Author: wangluyu
 Date: 2020/1/14
 """
 
+
 class Solution:
     """
     Implement strStr().
@@ -32,4 +33,23 @@ class Solution:
     对于本题而言，当 needle 是空字符串时我们应当返回 0 。这与C语言的 strstr() 以及 Java的 indexOf() 定义相符。
     """
     def strStr(self, haystack: str, needle: str) -> int:
-        pass
+        if needle == "":
+            return 0
+        needle_len = len(needle)
+        haystack_len = len(haystack)
+        if needle_len > haystack_len:
+            return -1
+        elif needle_len == haystack_len and haystack == needle:
+            return 0
+        for i in range(haystack_len - needle_len + 1):
+            print(haystack[i:i+needle_len])
+            if needle == haystack[i:i+needle_len]:
+                return i
+        return -1
+
+
+if __name__ == '__main__':
+    haystack = "mississippi"
+    needle = "pi"
+    s = Solution()
+    print(s.strStr(haystack, needle))
