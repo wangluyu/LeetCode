@@ -42,9 +42,12 @@ class Solution:
         elif needle_len == haystack_len and haystack == needle:
             return 0
         for i in range(haystack_len - needle_len + 1):
-            print(haystack[i:i+needle_len])
             if needle == haystack[i:i+needle_len]:
                 return i
+        return -1
+
+    def strStr_KMP(self, haystack: str, needle: str) -> int:
+        # TODO KMP实现
         return -1
 
 

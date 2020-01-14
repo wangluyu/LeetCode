@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
-Desc: 5. 最长回文子串 (难度 中等)
+Desc: 5. 最长回文子串 (中等)
 Author: wangluyu
 Date: 2020/1/7
 """
@@ -25,6 +25,7 @@ class Solution:
     输出: "bb"
     """
     def longestPalindrome(self, s: str) -> str:
+        # TODO 最长回文子串
         pass
 
 if __name__ == '__main__':

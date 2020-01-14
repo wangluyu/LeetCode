@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
-Desc: 6 Z字形变换 (难度 中等)
+Desc: 6 Z字形变换 (中等)
 Author: wangluyu
 Date: 2020/1/8
 """
@@ -47,4 +47,5 @@ class Solution:
     T     S     G
     """
     def convert(self, s: str, numRows: int) -> str:
+        # TODO Z字形变换
         pass
