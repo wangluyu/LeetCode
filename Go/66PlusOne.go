@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
 66. 加一 (简单)
 Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
@@ -30,7 +28,7 @@ Explanation: The array represents the integer 4321
 func plusOne(digits []int) []int {
 	i := len(digits) - 1
 	for i >= 0 {
-		digits[i] += 1
+		digits[i]++
 		digits[i] = digits[i] % 10
 		if digits[i] != 0 {
 			return digits
@@ -42,7 +40,7 @@ func plusOne(digits []int) []int {
 	return digits
 }
 
-func main() {
-	digits := []int{9, 9, 9, 9, 9, 9, 9}
-	fmt.Println(plusOne(digits))
-}
+// func main() {
+// 	digits := []int{9, 9, 9, 9, 9, 9, 9}
+// 	fmt.Println(plusOne(digits))
+// }

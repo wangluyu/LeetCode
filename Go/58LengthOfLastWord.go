@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 /**
 58. 最后一个单词的长度 (简单)
 Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word (last word means the last appearing word if we loop from left to right) in the string.
@@ -24,7 +20,7 @@ func lengthOfLastWord(s string) int {
 	l := 0
 	for i := len(s) - 1; i >= 0; i-- {
 		if string(s[i]) != " " {
-			l += 1
+			l++
 		} else if l != 0 {
 			return l
 		}
@@ -32,7 +28,7 @@ func lengthOfLastWord(s string) int {
 	return l
 }
 
-func main() {
-	s := "dadsa "
-	fmt.Println(lengthOfLastWord(s))
-}
+// func main() {
+// 	s := "dadsa "
+// 	fmt.Println(lengthOfLastWord(s))
+// }
