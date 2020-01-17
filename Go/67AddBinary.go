@@ -2,14 +2,12 @@
  * @Author: wangluyu
  * @Date: 2020-01-17 13:13:38
  * @LastEditors  : wangluyu
- * @LastEditTime : 2020-01-17 15:34:56
+ * @LastEditTime : 2020-01-17 16:01:02
  */
 
 package main
 
 import "strconv"
-
-import "fmt"
 
 /*
 67. Add Binary (simple)
@@ -59,6 +57,6 @@ func addBinary(a string, b string) string {
 	return s
 }
 
-func main() {
-	fmt.Println(addBinary("1010", "1011"))
-}
+// func main() {
+// 	fmt.Println(addBinary("1010", "1011"))
+// }
